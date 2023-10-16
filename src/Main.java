@@ -47,9 +47,9 @@ public class Main {
                 grid.data[r][c].setSurroundingAliveCount(getNumberAroundAliveCells(r,c));
             }
         }
-
         refresh();
     }
+
     public int getNumberAroundAliveCells(int row, int col) {
         int aliveCount = 0;
 
@@ -67,7 +67,6 @@ public class Main {
         gridPanel = new JPanel(new GridLayout(grid.getRows(), grid.getCols()));
 
         restart();
-        refresh();
 
         JScrollPane scrollPane = new JScrollPane(gridPanel);
 

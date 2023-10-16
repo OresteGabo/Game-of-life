@@ -4,14 +4,10 @@ public class Cell {
     private boolean alive;
     private Color isAliveColor;
     private int surroundingAliveCount;
-    private Position position;
+    private final Position position;
 
     public Position getPosition() {
         return position;
-    }
-
-    public void setPosition(Position position) {
-        this.position = position;
     }
 
     public Color getIsAliveColor() {
